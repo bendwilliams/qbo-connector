@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Essential Audio QBO Connector</title>
-<meta name="description" content="A private, internal read-only connector that lets Essential Audio Inc.'s own AI assistant read its own QuickBooks Online accounting data to help reconcile the books.">
+<meta name="description" content="A private, internal connector that lets Essential Audio Inc.'s own AI assistant read and write its own QuickBooks Online accounting data to automate its bookkeeping and reconciliation.">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -31,16 +31,16 @@
 </head>
 <body>
   <h1>Essential Audio QBO Connector</h1>
-  <p class="tagline">A private, read-only connector between Essential Audio Inc.'s own QuickBooks Online company and its own internal AI assistant.</p>
+  <p class="tagline">A private, read-and-write connector between Essential Audio Inc.'s own QuickBooks Online company and its own internal AI assistant.</p>
 
   <p>This is internal software built and used by Essential Audio Inc., a commercial audio-video integration company. It is not a product, it is not sold, and it is not available to anyone outside the company.</p>
 
   <h2>What it does</h2>
-  <p>The connector runs locally on Essential Audio's own computers. It reads accounting data from the company's own QuickBooks Online company file so an internal AI assistant can help review and reconcile the books. It is read-only &mdash; it does not create, change, or delete anything in QuickBooks.</p>
+  <p>The connector runs locally on Essential Audio's own computers. It reads and writes accounting data in the company's own QuickBooks Online company file so an internal AI assistant can automate its bookkeeping and reconciliation. It uses the <code>com.intuit.quickbooks.accounting</code> (read and write) scope, so it can create and update accounting records &mdash; entries, reconciliations, and similar &mdash; in addition to reading them.</p>
 
   <ul>
     <li>Single company, single user: Essential Audio Inc. only.</li>
-    <li>Read-only access to accounting data. No writes.</li>
+    <li>Read and write access to the company's own accounting data, for internal bookkeeping and reconciliation.</li>
     <li>Runs locally. No hosted service, no third-party servers.</li>
     <li>No analytics, no tracking, no cookies.</li>
   </ul>

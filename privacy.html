@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy &mdash; Essential Audio QBO Connector</title>
-<meta name="description" content="Privacy policy for Essential Audio Inc.'s private, internal, read-only QuickBooks Online connector.">
+<meta name="description" content="Privacy policy for Essential Audio Inc.'s private, internal read-and-write QuickBooks Online connector.">
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -32,10 +32,10 @@
   <h1>Privacy Policy</h1>
   <p class="updated">Essential Audio QBO Connector &middot; Last updated June 17, 2026</p>
 
-  <p>This connector is private, internal software used only by Essential Audio Inc. to read its own QuickBooks Online accounting data. There are no other users. This policy explains what it touches and what happens to that data.</p>
+  <p>This connector is private, internal software used only by Essential Audio Inc. to read and write its own QuickBooks Online accounting data for its own bookkeeping and reconciliation. There are no other users. This policy explains what it touches and what happens to that data.</p>
 
   <h2>What data it accesses</h2>
-  <p>The connector reads accounting data from Essential Audio's own QuickBooks Online company &mdash; the kind of records covered by Intuit's <code>accounting</code> scope (invoices, payments, transactions, accounts, and similar). It reads this data only. It does not create, change, or delete anything in QuickBooks.</p>
+  <p>The connector reads and writes accounting data in Essential Audio's own QuickBooks Online company &mdash; the kind of records covered by Intuit's <code>com.intuit.quickbooks.accounting</code> (read and write) scope (invoices, payments, transactions, accounts, and similar). In addition to reading this data, it can create and update accounting records &mdash; for example posting or adjusting bookkeeping entries and reconciliations &mdash; as part of automating Essential Audio's own books.</p>
 
   <h2>How that data is handled</h2>
   <ul>
@@ -47,7 +47,7 @@
   </ul>
 
   <h2>How access is revoked</h2>
-  <p>Access can be revoked at any time from inside QuickBooks Online: go to <strong>Settings &rarr; Manage apps</strong> (Connected apps), find this connector, and choose <strong>Disconnect</strong>. Access can also be revoked through the Intuit account. Once disconnected, the connector can no longer read any data.</p>
+  <p>Access can be revoked at any time from inside QuickBooks Online: go to <strong>Settings &rarr; Manage apps</strong> (Connected apps), find this connector, and choose <strong>Disconnect</strong>. Access can also be revoked through the Intuit account. Once disconnected, the connector can no longer read or write any data.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy or how data is handled: <a href="mailto:ben@essentialaudioinc.com">ben@essentialaudioinc.com</a></p>
